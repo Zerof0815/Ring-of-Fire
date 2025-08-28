@@ -1,1 +1,7 @@
-<p>game works!</p>
+<div class="field">
+    <div class="card-stack">
+        @for (c of [1,2,3,4,5]; track c; let i = $index) {
+            <img [style.transform]="'translate(' + (-50 - i*2.5) + '%, ' + (-50 - i*2) + '%)'" src="/assets/img/playing_cards-master/card_cover.png" alt="">
+        }
+    </div>
+</div>

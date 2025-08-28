@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './game.component.scss'
 })
 export class GameComponent {
-
+  gameCards:number[] = [1,2,3,4,5];
 }
