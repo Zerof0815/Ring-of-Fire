@@ -31,6 +31,12 @@
     }
 }
 
+.played-card {
+    left: -62px;
+    top: -93.5px;
+    transform: scale(1) translateX(140px) translateY(-180px) rotate(-10deg)
+}
+
 .pick-card {
     left: -62px;
     top: -93.5px;
@@ -48,4 +54,14 @@
     100% {
         transform: scale(1) translateX(140px) translateY(-180px) rotate(-10deg)
     }
+}
+
+.player-logo {
+    position: absolute;
+}
+
+.btn-add {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
 }

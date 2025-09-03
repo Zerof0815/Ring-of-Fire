@@ -1,8 +1,8 @@
 export class Game {
-    public players: string[] = [];
+    public players: string[] = ["Hans", "Peter", "Dosko"];
     public stack: string[] = [];
     public playedCards: string[] = [];
-    public currentPlaysr: number = 0;
+    public currentPlayer: number = 0;
 
     constructor(){
         this.fillStack();
