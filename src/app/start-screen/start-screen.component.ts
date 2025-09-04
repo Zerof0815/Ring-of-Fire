@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-start-screen',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './start-screen.component.html',
   styleUrl: './start-screen.component.scss'
 })
 export class StartScreenComponent {
 
+  constructor(private router: Router) {}
+  
+  newGame() {
+    this.router.navigateByUrl("/game");
+  }
 }
