@@ -10,4 +10,5 @@ import { Component, Input } from '@angular/core';
 export class PlayerComponent {
   @Input() name:string = "";
   @Input() playerCount:number = 0;
+  @Input() playerActive:boolean = false;
 }
