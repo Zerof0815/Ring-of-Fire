@@ -6,14 +6,14 @@
 <div class="field">
     <div class="card-stack">
         @for (c of [1,2,3,4,5]; track c; let i = $index) {
-            <img [style.transform]="'translate(' + (-50 - i*2.5) + '%, ' + (-50 - i*2) + '%)'" src="/assets/img/playing_cards-master/card_cover.png" alt="">
+            <img [style.transform]="'translate(' + (-50 - i*2.5) + '%, ' + (-50 - i*2) + '%)'" src="assets/img/playing_cards-master/card_cover.png" alt="">
         }
-        <img (click)="takeCard()" class="first-card" src="/assets/img/playing_cards-master/card_cover.png" alt="">
+        <img (click)="takeCard()" class="first-card" src="assets/img/playing_cards-master/card_cover.png" alt="">
         @for (c of game.playedCards; track c; let i = $index) {
-            <img src="/assets/img/playing_cards-master/{{c}}.png" class="played-card" alt="">
+            <img src="assets/img/playing_cards-master/{{c}}.png" class="played-card" alt="">
         }
         @if (cardAnimation) {
-            <img class="pick-card" src="/assets/img/playing_cards-master/{{currentCard}}.png" alt="">
+            <img class="pick-card" src="assets/img/playing_cards-master/{{currentCard}}.png" alt="">
         }
     </div>
 </div>
